@@ -49,7 +49,7 @@ class DetailFragment : Fragment() {
 
         // Back button listener
         view.findViewById<Button>(R.id.back_button)?.setOnClickListener {
-            it.findNavController().navigate(R.id.action_detail_to_list)
+            it.findNavController().popBackStack()
         }
     }
 
